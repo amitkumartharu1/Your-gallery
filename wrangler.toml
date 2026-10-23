@@ -1,0 +1,24 @@
+name = "your-gallery"
+main = "src/worker.js"
+compatibility_date = "2026-10-15"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*", "/media/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "your-gallery-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "your-gallery-images"
+
+[vars]
+SITE_URL = "http://localhost:8787"
+KHALTI_BASE_URL = "https://dev.khalti.com"
+SESSION_TTL_SECONDS = "604800"
+MAX_UPLOAD_BYTES = "15000000"

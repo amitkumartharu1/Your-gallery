@@ -1,0 +1,6 @@
+# Copy to .dev.vars and fill in your own values. Never commit secrets.
+SESSION_SECRET=replace-with-at-least-32-random-characters
+KHALTI_SECRET_KEY=your-khalti-test-secret-key
+KHALTI_PUBLIC_KEY=your-khalti-test-public-key
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=change-this-before-first-run
